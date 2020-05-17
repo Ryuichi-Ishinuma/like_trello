@@ -17,7 +17,6 @@ header {
     background: #232932;
     overflow: hidden;
     display: block;
-    padding: 10px;
     position: fixed;
     top: 0;
     text-align: center;

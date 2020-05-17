@@ -9,9 +9,9 @@ const store = new Vuex.Store({
   state: {
     lists: savedLists ? JSON.parse(savedLists): [
       {
-        title: "Todo",
+        title: "",
         cards: [
-          { body: "Science" }
+          { body: "" }
         ]
       },
     ],

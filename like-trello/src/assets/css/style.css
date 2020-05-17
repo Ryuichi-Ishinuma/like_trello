@@ -1,3 +1,6 @@
+/* A Modern CSS Reset */
+*,*::before,*::after{box-sizing:border-box}ul[class],ol[class]{padding:0}body,h1,h2,h3,h4,p,ul[class],ol[class],figure,blockquote,dl,dd{margin:0}body{min-height:100vh;scroll-behavior:smooth;text-rendering:optimizeSpeed;line-height:1.5}ul[class],ol[class]{list-style:none}a:not([class]){text-decoration-skip-ink:auto}img{max-width:100%;display:block}article>*+*{margin-top:1em}input,button,textarea,select{font:inherit}img:not([alt]){filter:blur(10px)}@media(prefers-reduced-motion:reduce){*{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important;scroll-behavior:auto !important}}
+
 html {
     background: #29303b;
     font-family: 'Avenir', Helvetica, Arial, 'system-ui', sans-serif;
@@ -18,7 +21,6 @@ main {
     padding: 0 10px 10px;
     position: relative;
     top: 70px;
-    width: calc(100% - 40px);
     height: 100%;
     letter-spacing: 0.01em;
     margin-bottom: 10px;
@@ -29,7 +31,7 @@ main {
 
 .info-line {
     color: #46c28e;
-    margin: 20px;
+    margin: 10px 20px;
     font-size: 20px;
     font-weight: 700;
 }
@@ -68,13 +70,13 @@ main {
     justify-content: space-between;
 }
 .list-cards {
-    max-height: 480px;
+    max-height: 500px;
 }
 
 .list-title {
     color: #172b4d;
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 16px;
+    font-weight: 700;
     margin: 0;
     padding: 0;
 }
@@ -83,7 +85,7 @@ main {
     color: #172b4d;
     margin: 0;
     margin-bottom: 10px;
-    padding: 25px 0 0;
+    padding: 25px 30px 0 0;
 }
 
 .deletelist {
@@ -192,7 +194,7 @@ main {
     padding: 15px;
     background-color: #fff;
     border-radius: 8px;
-    max-width: 260px;
+    max-width: 270px;
     cursor: pointer;
 }
 .card:hover {
@@ -203,7 +205,6 @@ main {
 }
 
 .close-button {
-    display: none;
     position: absolute;
     top: -5px;
     right: -5px;
@@ -216,9 +217,6 @@ main {
     background-color: #172b4d;
     color: white;
     margin: 5px;
-}
-.close-button:active {
-    display: block;
 }
 
 .body {

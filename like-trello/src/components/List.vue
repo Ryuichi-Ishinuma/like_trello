@@ -10,8 +10,10 @@
             class="list-cards"
             group="cards" 
             :list="cards"
+            tag="ul"
             @end="$emit('change')"
         >
+        <!-- <transition-group> -->
             <card 
                 v-for="(item, index) in cards"
                 :key="item.id"
@@ -19,6 +21,7 @@
                 :cardIndex="index"
                 :listIndex="listIndex"
             />
+            <!-- </transition-group> -->
         </draggable>
         </perfect-scrollbar>
         <card-add :listIndex="listIndex" />

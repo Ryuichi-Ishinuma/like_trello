@@ -1,11 +1,11 @@
 <template>
-    <div class="card">
+    <li class="card">
         <button 
             class="close-button"
             @click="removeCardFromList"
         >×</button>
         <div class="body">{{ body }}</div>
-    </div>
+    </li>
 </template>
 
 <script>
@@ -33,3 +33,7 @@ export default {
     },
 }
 </script>
+
+<style scoped>
+
+</style>
