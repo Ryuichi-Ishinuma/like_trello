@@ -1,19 +1,19 @@
 <template>
   <div id="app">
-    <Board />
+    <nav>
+      <router-link to="/">Home</router-link>
+      <router-link to="/board">Board</router-link>
+    </nav>
+    <router-view />
   </div>
 </template>
 
 Vue.use(PerfectScrollbar);
 
 <script>
-import Board from './components/Board.vue'
 
 export default {
   name: 'App',
-  components: {
-    Board,
-  }
 }
 </script>
 

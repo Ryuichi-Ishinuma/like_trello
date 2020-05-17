@@ -27,9 +27,9 @@
 import draggable from "vuedraggable"
 // import { PerfectScrollbar } from "vue2-perfect-scrollbar"
 // import 'vue2-perfect-scrollbar/dist/vue2-perfect-scrollbar.css'
-import Header from "./Header.vue"
-import ListAdd from "./ListAdd.vue"
-import List from "./List.vue"
+import Header from "../components/Header.vue"
+import ListAdd from "../components/ListAdd.vue"
+import List from "../components/List.vue"
 import { mapState } from "vuex"
 
 export default {
