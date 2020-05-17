@@ -4,6 +4,8 @@
   </div>
 </template>
 
+Vue.use(PerfectScrollbar);
+
 <script>
 import Board from './components/Board.vue'
 

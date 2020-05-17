@@ -5,7 +5,9 @@
             <p class="list-counter">total: {{ totalCardInList }}</p>
             <div class="deletelist" @click="removeList">×</div>
         </div>
-        <draggable 
+        <perfect-scrollbar>
+        <draggable
+            class="list-cards"
             group="cards" 
             :list="cards"
             @end="$emit('change')"
@@ -18,18 +20,22 @@
                 :listIndex="listIndex"
             />
         </draggable>
+        </perfect-scrollbar>
         <card-add :listIndex="listIndex" />
     </div>
 </template>
 
 <script>
 import draggable from "vuedraggable"
+import { PerfectScrollbar } from "vue2-perfect-scrollbar"
+import 'vue2-perfect-scrollbar/dist/vue2-perfect-scrollbar.css'
 import CardAdd from "./CardAdd.vue"
 import Card from "./Card.vue"
 
 export default {
     components: {
         draggable,
+        PerfectScrollbar,
         CardAdd,
         Card,
     },

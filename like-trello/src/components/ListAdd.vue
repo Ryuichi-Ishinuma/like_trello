@@ -24,7 +24,7 @@ export default {
     data() {
         return {
             title: "",
-            isEditing: false
+            isEditing: false,
         }
     },
     computed: {
