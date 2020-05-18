@@ -1,9 +1,15 @@
 <template>
     <div>
         <Header></Header>
-        <main>
-            <div>ボードを作成する</div>
-        </main>
+        <div class="home-container">
+            <div class="boards">
+                <div class="boards-lists">
+                    <ul>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
 </template>
 

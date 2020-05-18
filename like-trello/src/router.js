@@ -10,8 +10,14 @@ Vue.use(Router)
 const router = new Router({
     mode: "history",
     routes: [
-        { path: '/', component: Home },
-        { path: "/board", component: Board }
+        { 
+            path: '/', 
+            component: Home 
+        },
+        { 
+            path: "/board", 
+            component: Board 
+        },
     ]
 })
 

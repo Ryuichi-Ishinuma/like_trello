@@ -27,7 +27,7 @@ h1 {
     color: #46c28e;
     font-style: italic;
     font-family: 'Caveat', cursive;
-    font-size: 40px;
+    font-size: 30px;
     margin: 0;
 }
 </style>
