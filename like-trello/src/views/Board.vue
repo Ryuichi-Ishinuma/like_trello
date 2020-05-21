@@ -2,7 +2,8 @@
   <div>
     <Header></Header>
     <main>
-        <board-header></board-header>
+      <board-header></board-header>
+      <div class="board">
         <p class="info-line">All: {{ totalCardCount }} tasks</p>
         <draggable 
           class="list-index" 
@@ -19,7 +20,8 @@
           />
           <list-add />
         </draggable>
-        <!-- <perfect-scrollbar /> -->
+      </div>
+      <board-menu></board-menu>
     </main>
   </div>
 </template>
@@ -30,6 +32,7 @@ import draggable from "vuedraggable"
 // import 'vue2-perfect-scrollbar/dist/vue2-perfect-scrollbar.css'
 import Header from "../components/Header.vue"
 import BoardHeader from "../components/BoardHeader.vue"
+import BoardMenu from "../components/BoardMenu.vue"
 import ListAdd from "../components/ListAdd.vue"
 import List from "../components/List.vue"
 import { mapState } from "vuex"
@@ -40,6 +43,7 @@ export default {
     // PerfectScrollbar,
     Header,
     BoardHeader,
+    BoardMenu,
     ListAdd,
     List,
   },

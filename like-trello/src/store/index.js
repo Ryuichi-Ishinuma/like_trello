@@ -4,6 +4,7 @@ import Vuex from 'vuex'
 Vue.use(Vuex)
 
 const savedLists = localStorage.getItem("trello-lists")
+const savedStars = localStorage.getItem("saved-stars")
 
 const store = new Vuex.Store({
   state: {
@@ -14,6 +15,11 @@ const store = new Vuex.Store({
           { body: "" }
         ]
       },
+    ],
+    stars: savedStars ? JSON.parse(savedStars): [
+      {
+        star: false,
+      }
     ],
   },
   mutations: {
@@ -61,6 +67,7 @@ const store = new Vuex.Store({
 
 store.subscribe((mutation, state) => {
   localStorage.setItem("trello-lists", JSON.stringify(state.lists))
+  localStorage.setItem("saved-stars")
 })
 
 export default store
